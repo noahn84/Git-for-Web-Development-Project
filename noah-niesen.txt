@@ -1,3 +1,5 @@
+Codepen Exercise URL: https://codepen.io/noahniesen/pen/YzyPGBB?editors=1100
+
 Homework Questions:
     1. What is Semantic HTML?
 
