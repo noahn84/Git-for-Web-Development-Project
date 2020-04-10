@@ -1,0 +1,207 @@
+Codepen Exercise URL: https://codepen.io/noahniesen/pen/YzyPGBB?editors=1100
+
+Homework Questions:
+    1. What is Semantic HTML?
+
+    Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define its presentation or look.
+
+    2. What is HTML used for?
+
+    Web developers use HTML keywords or tags to instruct the Web browser application how to format and display the content of Web pages.
+
+    3. What is an attribute and where do we put it?
+
+    Attributes define additional characteristics or properties of the element such as the 'width' and 'height' of an image.
+    Attributes are always specified in the opening tag.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+
+    The h1 tag is typically used for the title of a page or post, and search engines use h1 tags to filter search results.
+    It's highly recommended to use only one h1 tag per page.
+
+    5. Name two tags that have required attributes
+
+    'href' and 'id'.
+
+    6. What do we put in the head of our HTML document?
+
+    The <head> tag contains metadata (document title, character set, styles, links, scripts), specific information about the web page that is not displayed to the user.
+    Metadata provides browsers and search engines with technical information about the web page.
+
+    7. What is an id? 
+
+    The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).
+    The id attribute is most used to point to a style in a style sheet, and by JavaScript to manipulate the element with the specific id.
+
+    8. What elements can I add an id to?
+
+    Any element.
+
+    9. How many times can I use the same id on a page?
+
+    Once, since IDs are unique.
+
+    10. What is a class?
+
+    A class is similar to an ID, except classes can be used on multiple elements within the same page.
+
+    11. What elements can I add a class to?
+
+    Any element.
+
+    12. How many times can I use the same class on a page?
+
+    As many times as needed.
+
+    13. How do I get my link to open in a new tab?
+
+    Inside of an 'a' tag, you must add a 'target' attribute, and assign it to '"_blank"' => <a target='_blank' href='#'>link text</a>
+
+    14. What is the alt attribute in the image tag used for?
+
+    The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.
+
+    15. How do I reference an id?
+
+    By simply using the name of the ID.
+
+    16. What is the difference between a section and a div?
+
+    The section tag defines sections in a document like chapters, headers, footers, whereas the div tag defines a division in an HTML document.
+
+    17. What is CSS used for?
+
+    Styling the layout of HTML.
+
+    18. How to we select an element? Example - every h2 on the page?
+
+    By simply typing the name of the element, which would be h2.
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one.
+
+    Classes can be used on multiple elements per page, where IDs can only be used once per page.
+    You should use an ID to explicitly define a single element (for instance, a container for articles).
+    You should use a class when you expect there to be multiple similar elements that you would like to retain similar styling.
+
+    20. How do we select classes in CSS?
+
+    By a period '.' before the name of the class. => .className {}
+
+    21. How do we select a p element with a single class of “human”?
+
+    p.human
+
+    22. What is a parent child selector? When would this be useful? 
+
+    The child selector is used to match elements that are direct children of other elements, which is a little more precise than the traditional contextual selector.
+    A nested list is a good example of when this would be useful. Maybe you want to make the outer-most list items bold, but the nested lists in normal font. 
+
+    23. How do you select all links within a div with the class of 'sidebar'?
+
+    'div.sidebar a'
+
+    24. What is a pseudo selector?
+
+    A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).
+    For example, :hover can be used to change a button's color when the user's pointer hovers over it.
+
+    25. What do we use to change the spacing between lines?
+
+    'line-height:'
+
+    26. What do we use to change the spacing between letters?
+
+    'letter-spacing:'
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+    CAPITALS => 'text-transform: uppercase;'
+    lowercase => 'text-transform: lowercase;'
+    Capitalize => 'text-transform: capitalize;'
+
+    28. How do I add a 1px border around my div that is dotted and black?
+
+    div {
+      border: 1px dotted black;
+    }
+
+    29. How do I select everything on the page?
+
+    * {
+      property: value;
+    }
+
+    30. How do I write a comment in CSS?
+
+    Start comment with '/*', and end it with '*/' => /* comment inside */
+
+    31. How do I find out what file I am in, when I am using the command line?
+
+    By using the 'pwd' command, which stands for 'print working directory'.
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+
+    By using the 'ls' command.
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+
+    When you run the rm -R command on a folder, you're telling Terminal to delete that folder, any files it contains,
+    any sub-folders it contains, and any files or folders in those sub-folders, all the way down.
+
+    34. Why should I use version control?
+
+    Version control systems allow you to compare files, identify differences, and merge the changes if needed prior to committing any code.
+
+    35. How often should I commit to github?
+
+    When you add a method, commit. When you change something, commit.
+
+    36. What is the command we would use to push our repo up to github?
+
+    'git push' pushes changes from your local repo into a remote repo.
+
+    37. Walk me through Lambda's git flow.
+
+    Step 1: Create your own version of the repo by forking the original repo.
+    Step 2: Add your PM as a collaborator within your forked repo's settings.
+    Step 3: Clone the repo by opening terminal and run 'git clone <forked repo URL>'
+    Step 4: Create your own branch with a name of your firstName-lastName => git checkout -b 'firstName-lastName'.
+            After, run 'git branch' to make sure you create the branch properly.
+            Run your usual commands, 'git push origin firstName-lastName', 'git add', 'git commit', just as you normally would.
+            DON'T PUSH TO MASTER. PUSH TO ORIGIN.
+    Step 5: Submit a pull request (PR), using your forked repo as the BASE.
+            Open your PR, and add your PM as a collaborator under 'Reviewers' found on the right-hand side.
+    Step 6: Complete. A PM will now accept the merge request after conducting a review of the code.
+            Be sure to 'accept the changes'!
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+
+    In general, block level elements are usually structural, while inline elements are usually text based.
+
+    2. What happens when an element is positioned absolutely?
+
+    An absolutely positioned element is an element whose computed position value is absolute or fixed.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+
+    Setting a width value to a padding, border, or margin property.
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+    BLOCK DEFAULT: div, form, section
+    INLINE DEFAULT: span, textarea
+    INLINE-BLOCK DEFAULT: button
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+
+    There are four parts to the Box Model: content area, padding, border, and margin.
+    The content area is where the content is, whether it be text, nested elements, etc. The width and height properties are asigned to the content area by default.
+    The padding is the space between the content area and the border of an element. The width and height properties can be applied, adding to the original width and height of the content area. A padding of 20px will be applied to the top, left, bottom, and right, adding a total of 40px to the height, and 40px to the width. Padding allows elements to 'breathe'.
+    The border sperates the element from the rest of the web page. Just like padding, adding a border will add to the overall width and height of the element.
+    The margin is the space between the original element and the other elements. Say there are two squares next to each other on a screen, one above the other. Adding a 'margin-bottom' property of 20px to the top box will move the bottom box down by 20px, seperating the two boxes.
+
+    When it comes to making all elements respect the width and height that we've specified, we should consider the CSS box-sizing property.
+
+    The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
